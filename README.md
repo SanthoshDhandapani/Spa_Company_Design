@@ -3,7 +3,7 @@ This project was aimed to create a static page design for a company website.
 ## Made with
 
 - Components as per [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/).
-- Preprocess css [Sass](https://sass-lang.com/).
+- CSS Preprocessor - [Sass](https://sass-lang.com/).
 - Styling guidelines are followed from [SMACSS](https://smacss.com/) and [BEM](http://getbem.com/).
 - Accessibility guidelines are followed from [WCAG](https://www.w3.org/WAI/intro/wcag).
 
