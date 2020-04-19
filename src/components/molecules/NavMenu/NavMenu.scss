@@ -1,0 +1,46 @@
+@import "../../../sass/theme.scss";
+
+.mob-menu__toggle {
+  display: none;
+}
+
+.mob__get-in-touch {
+  display: none;
+  align-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .mob-menu__toggle,
+  .mob__get-in-touch {
+    display: block;
+    color: $accent;
+  }
+}
+
+.nav-menu {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: inherit;
+  list-style: none;
+  margin: 0;
+  li {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}

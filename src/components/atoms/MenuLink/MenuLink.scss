@@ -1,0 +1,13 @@
+@import "../../../sass/theme.scss";
+
+.menu-link {
+  text-decoration: none;
+  color: $menu-labels;
+  font-size: 1rem;
+  &--active {
+    color: $accent;
+  }
+  &:hover {
+    color: $accent;
+  }
+}

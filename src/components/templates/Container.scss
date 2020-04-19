@@ -1,0 +1,21 @@
+@import "../../sass/theme.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > * {
+  padding: 0px 5%;
+}
+
+@media (max-width: 768px) {
+  .container > * {
+    padding: 0px 3%;
+  }
+}
+
+header,
+footer {
+  background-color: $secondary;
+}

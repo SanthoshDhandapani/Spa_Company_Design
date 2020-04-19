@@ -1,0 +1,20 @@
+@import "../../../sass/theme.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: $primary;
+  color: $accent;
+  border: 0;
+  padding: 10px 40px;
+  border-radius: 25px;
+  font-weight: 700;
+  &.button__icon {
+    padding: 10px 20px;
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: medium;
+}

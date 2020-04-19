@@ -1,0 +1,17 @@
+@import "../../../sass/theme.scss";
+
+.logo {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: $accent;
+  text-decoration: none;
+  & span {
+    color: $primary;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin: auto;
+  }
+}
