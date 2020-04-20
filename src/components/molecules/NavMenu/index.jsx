@@ -40,11 +40,11 @@ const NavMenu = memo(() => {
   }, []);
 
   return (
-    <nav className="nav-menu">
-      <FaBars className="mob-menu__toggle" />
+    <nav className="nav">
+      <FaBars className="nav__mob-menu__toggle" />
       <Logo />
-      <div className="menu-container">
-        <ul className="menu-list">
+      <div className="nav__menu-container">
+        <ul className="nav__menu-list">
           {menuItems.map(({ name, url, active }) => (
             <li key={name}>
               <MenuLink href={url} active={active} onClick={onMenuItemClick}>
@@ -55,7 +55,7 @@ const NavMenu = memo(() => {
         </ul>
         <Button icon={FaRegCommentAlt}>Get In Touch</Button>
       </div>
-      <FaRegCommentAlt className="mob__get-in-touch" />
+      <FaRegCommentAlt className="nav__mob__get-in-touch" />
     </nav>
   );
 });

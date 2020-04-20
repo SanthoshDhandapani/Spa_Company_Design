@@ -1,46 +1,42 @@
 @import "../../../sass/theme.scss";
 
-.mob-menu__toggle {
-  display: none;
-}
-
-.mob__get-in-touch {
-  display: none;
-  align-content: flex-end;
-}
-
-@media (max-width: 768px) {
-  .mob-menu__toggle,
-  .mob__get-in-touch {
-    display: block;
-    color: $accent;
-  }
-}
-
-.nav-menu {
+.nav {
   padding: 15px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
+  &__menu-container {
+    display: flex;
+    align-items: center;
+  }
 
-.menu-container {
-  display: flex;
-  align-items: center;
-}
-
-.menu-list {
-  display: inherit;
-  list-style: none;
-  margin: 0;
-  li {
-    margin-right: 40px;
+  &__menu-list {
+    display: inherit;
+    list-style: none;
+    margin: 0;
+    li {
+      margin-right: 40px;
+    }
+  }
+  &__mob-menu__toggle {
+    display: none;
+  }
+  &__mob__get-in-touch {
+    display: none;
+    align-content: flex-end;
   }
 }
 
 @media (max-width: 768px) {
-  .menu-container {
-    display: none;
+  .nav {
+    &__menu-container {
+      display: none;
+    }
+    &__mob-menu__toggle,
+    &__mob__get-in-touch {
+      display: block;
+      color: $accent;
+    }
   }
 }

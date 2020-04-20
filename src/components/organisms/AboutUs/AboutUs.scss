@@ -1,0 +1,31 @@
+@import "../../../sass/theme.scss";
+
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  &__title {
+    color: $typo-grey;
+    font-size: xx-large;
+    font-weight: 500;
+  }
+  &__description {
+    color: $typo-grey;
+    font-size: larger;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+  &__image {
+    text-align: center;
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 30px;
+  }
+}
