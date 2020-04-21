@@ -1,0 +1,57 @@
+@import "../../../sass/theme.scss";
+
+.contact-us {
+  text-align: center;
+  background: url("../../../assets/images/contact-us_bg.jpg");
+  color: $accent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 60px;
+  &__heading {
+    padding-top: 60px;
+    font-weight: 500;
+  }
+  &__subheading {
+    font-weight: 400;
+    margin: 10px 0px 30px;
+    font-size: medium;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "name emailID mobile"
+      "messageInBrief messageInBrief messageInBrief"
+      ". submit .";
+    grid-gap: 30px;
+    margin: auto;
+    width: 70%;
+    &__name {
+      grid-area: name;
+    }
+    &__emailID {
+      grid-area: emailID;
+    }
+    &__mobile {
+      grid-area: mobile;
+    }
+    &__messageInBrief {
+      grid-area: messageInBrief;
+    }
+    &__submit {
+      grid-area: submit;
+      padding: 12px 34px;
+      justify-self: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    &__form {
+      width: auto;
+      grid-template-columns: 1fr;
+      grid-template-areas: "name" "emailID" "mobile" "messageInBrief" "submit";
+    }
+  }
+}

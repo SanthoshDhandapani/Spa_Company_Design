@@ -1,0 +1,25 @@
+@import "../../../sass/theme.scss";
+
+.social-media {
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    a {
+      text-decoration: none;
+      margin-top: 5px;
+      color: $milky-grey;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .social-media {
+    &__links {
+      grid-gap: 20px;
+    }
+  }
+}

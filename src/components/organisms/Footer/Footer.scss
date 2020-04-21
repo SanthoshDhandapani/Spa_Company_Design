@@ -1,0 +1,25 @@
+@import "../../../sass/theme.scss";
+
+.footer {
+  height: 80px;
+  background-color: $secondary;
+  color: $typo-content-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.footer .social-media__links {
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 110px;
+  }
+}

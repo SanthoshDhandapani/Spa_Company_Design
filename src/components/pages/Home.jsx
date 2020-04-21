@@ -4,6 +4,8 @@ import Container from "../templates/Container";
 import Banner from "../organisms/Banner";
 import Testimonials from "../organisms/Testimonials";
 import AboutUs from "../organisms/AboutUs";
+import ContactUs from "../organisms/ContactUs";
+import Footer from "../organisms/Footer";
 
 const Home = () => (
   <Container>
@@ -11,6 +13,8 @@ const Home = () => (
     <Banner />
     <AboutUs />
     <Testimonials />
+    <ContactUs />
+    <Footer />
   </Container>
 );
 

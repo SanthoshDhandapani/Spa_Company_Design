@@ -1,7 +1,6 @@
 @import "../../../sass/theme.scss";
 
 .button {
-  display: flex;
   align-items: center;
   background-color: $primary;
   color: $accent;
@@ -10,6 +9,7 @@
   border-radius: 25px;
   font-weight: 700;
   &.button__icon {
+    display: flex;
     padding: 10px 20px;
   }
 }
