@@ -5,7 +5,9 @@ import ServiceCards from "../../molecules/ServiceCards";
 const Banner = memo(() => (
   <section className="banner">
     <h1 className="banner__title">
-      Integer bibendum sit amet <br /> arcu vel egestas.
+      Integer bibendum sit amet
+      <br />
+      arcu vel egestas.
     </h1>
     <ServiceCards />
   </section>

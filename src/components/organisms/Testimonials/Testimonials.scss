@@ -1,0 +1,30 @@
+@import "../../../sass/theme.scss";
+
+.testimonials {
+  background: $section-bg1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  z-index: 1;
+  &__header {
+    text-align: center;
+    color: $typo-grey;
+    font-weight: 500;
+    padding-bottom: 30px;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+    &__only-on-lg-screens {
+      display: none;
+    }
+  }
+}

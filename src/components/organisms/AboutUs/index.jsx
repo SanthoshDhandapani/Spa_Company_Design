@@ -17,8 +17,8 @@ const AboutUs = memo(() => (
         eleifend consectetur. Nulla mollis non enim non tempus.
       </p>
     </div>
-    <div className="about-us__image">
-      <img src={AboutUsImg} alt="aboutUsImage" />
+    <div className="about-us__image__container">
+      <img src={AboutUsImg} alt="aboutUsImage" className="about-us__image" />
     </div>
   </section>
 ));

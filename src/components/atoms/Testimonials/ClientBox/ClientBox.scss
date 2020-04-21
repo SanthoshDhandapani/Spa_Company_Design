@@ -1,0 +1,22 @@
+@import "../../../../sass/theme.scss";
+
+.testimonials__client-box {
+  display: flex;
+}
+
+.testimonials__client-box__portfolio {
+  padding-left: 10px;
+  padding-top: 6px;
+}
+
+.testimonials__client-box__portfolio__name {
+  font-weight: 500;
+  color: $typo-grey;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.testimonials__client-box__portfolio__details {
+  font-size: medium;
+  color: $typo-content-grey;
+}

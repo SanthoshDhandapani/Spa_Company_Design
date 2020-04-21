@@ -16,9 +16,13 @@
     padding-right: 30px;
     padding-top: 20px;
   }
-  &__image {
+  &__image__container {
     text-align: center;
     align-self: center;
+    width: 100%;
+  }
+  &__image {
+    width: inherit;
   }
 }
 
