@@ -6,6 +6,16 @@ import Testimonials from "../organisms/Testimonials";
 import AboutUs from "../organisms/AboutUs";
 import ContactUs from "../organisms/ContactUs";
 import Footer from "../organisms/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+// To initiate animation on scroll
+AOS.init({
+  offset: 200,
+  easing: "ease-in-out-back",
+  duration: 1000,
+  delay: 100,
+});
 
 const Home = () => (
   <Container>

@@ -44,7 +44,7 @@ const NavMenu = memo(() => {
       <FaBars className="nav__mob-menu__toggle" />
       <Logo />
       <div className="nav__menu-container">
-        <ul className="nav__menu-list">
+        <ul className="nav__menu-list" data-aos="fade-down">
           {menuItems.map(({ name, url, active }) => (
             <li key={name}>
               <MenuLink href={url} active={active} onClick={onMenuItemClick}>
@@ -53,7 +53,13 @@ const NavMenu = memo(() => {
             </li>
           ))}
         </ul>
-        <Button icon={FaRegCommentAlt}>Get In Touch</Button>
+        <Button
+          data-aos="fade-left"
+          className="nav__get-in-touch"
+          icon={FaRegCommentAlt}
+        >
+          Get In Touch
+        </Button>
       </div>
       <FaRegCommentAlt className="nav__mob__get-in-touch" />
     </nav>

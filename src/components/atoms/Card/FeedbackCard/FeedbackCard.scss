@@ -1,6 +1,6 @@
 @import "../../../../sass/theme.scss";
 
-%shared-position {
+@mixin shared-position {
   content: "";
   position: absolute;
   border-bottom: 25px solid transparent;
@@ -22,14 +22,14 @@
     color: $typo-content-grey;
   }
   &::before {
-    @extend %shared-position;
+    @include shared-position;
     border-right: 39px solid rgba(0, 0, 0, 0.1);
     left: 38px;
     bottom: -22px;
     z-index: -1;
   }
   &::after {
-    @extend %shared-position;
+    @include shared-position;
     border-right: 40px solid $accent;
     left: 35px;
     bottom: -18px;

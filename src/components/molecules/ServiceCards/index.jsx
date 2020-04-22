@@ -19,7 +19,11 @@ const serviceList = [
 ];
 
 const ServiceCards = memo(() => (
-  <div className="service-cards">
+  <div
+    className="service-cards"
+    data-aos="zoom-in-down"
+    data-aos-duration="1500"
+  >
     {serviceList.map((service) => (
       <TinyCard {...service} key={service.title} />
     ))}

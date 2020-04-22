@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 const testimonials = [
   {
     classValue: "testimonials__only-on-lg-screens",
@@ -6,6 +7,10 @@ const testimonials = [
     client: {
       name: "Client One",
       details: "CEO, Org One",
+    },
+    aosConfig: {
+      ["data-aos"]: "fade-right",
+      ["data-aos-duration"]: "1500",
     },
   },
   {
@@ -16,6 +21,10 @@ const testimonials = [
       name: "Client Two",
       details: "CTO, Org Two",
     },
+    aosConfig: {
+      ["data-aos"]: "fade-up",
+      ["data-aos-duration"]: "1500",
+    },
   },
   {
     classValue: "testimonials__only-on-lg-screens",
@@ -24,6 +33,10 @@ const testimonials = [
     client: {
       name: "Client Three",
       details: "CEO, Org Three",
+    },
+    aosConfig: {
+      ["data-aos"]: "fade-left",
+      ["data-aos-duration"]: "1500",
     },
   },
 ];

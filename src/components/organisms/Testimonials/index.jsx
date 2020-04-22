@@ -6,14 +6,18 @@ import testimonials from "./feed";
 
 const Testimonials = memo(() => (
   <section className={"testimonials"} role="complementary">
-    <h2 className="testimonials__header">Testimonials</h2>
+    <h2 className="testimonials__header" data-aos="fade-down">
+      Testimonials
+    </h2>
     <div className="testimonials__container">
-      {testimonials.map(({ classValue, feedbackMessage, client }) => (
-        <div className={classValue} key={client.name}>
-          <FeedbackCard>{feedbackMessage}</FeedbackCard>
-          <ClientBox clientName={client.name} details={client.details} />
-        </div>
-      ))}
+      {testimonials.map(
+        ({ aosConfig = {}, classValue, feedbackMessage, client }) => (
+          <div className={classValue} key={client.name} {...aosConfig}>
+            <FeedbackCard>{feedbackMessage}</FeedbackCard>
+            <ClientBox clientName={client.name} details={client.details} />
+          </div>
+        )
+      )}
     </div>
   </section>
 ));
