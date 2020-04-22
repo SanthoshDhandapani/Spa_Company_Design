@@ -5,34 +5,33 @@ import Input from "../../atoms/Input";
 
 const ContactUs = memo(() => (
   <section className="contact-us" role="complementary">
-    <div data-aos="fade-up">
-      <h2 className="contact-us__heading">Convinced to work with us?</h2>
-      <h3 className="contact-us__subheading">
-        Company has helped agencies keep their promises to clients since 2005.
-      </h3>
-    </div>
+    <h2 className="contact-us__heading" data-aos="fade-up">
+      Convinced to work with us?
+    </h2>
+    <h3 className="contact-us__subheading" data-aos="fade-up">
+      Company has helped agencies keep their promises to clients since 2005.
+    </h3>
     <form className="contact-us__form">
       <Input
         placeholder="Full Name"
         className="contact-us__form__name"
         type="text"
         aria-label="full name"
-        data-aos="zoom-in-right"
+        data-aos="fade-up"
       />
       <Input
         placeholder="Email Address"
         className="contact-us__form__emailID"
         type="text"
         aria-label="email address"
-        data-aos="fade-zoom-in"
-        data-aos-duration="1500"
+        data-aos="fade-up"
       />
       <Input
         placeholder="Phone Number"
         className="contact-us__form__mobile"
         type="text"
         aria-label="mobile number"
-        data-aos="zoom-in-left"
+        data-aos="fade-up"
       />
       <textarea
         placeholder="Message in brief"
