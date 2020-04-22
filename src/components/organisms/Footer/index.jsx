@@ -5,7 +5,7 @@ import SocialMediaLinks from "../../molecules/SocialMediaLinks";
 const presentYear = new Date().getFullYear();
 
 const Footer = memo(() => (
-  <div className="footer">
+  <div className="footer" role="complementary">
     <span>&copy;{` ${presentYear} Company. All Rights Reserved.`}</span>
     <SocialMediaLinks />
   </div>

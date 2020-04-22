@@ -5,7 +5,7 @@ import ClientBox from "../../atoms/Testimonials/ClientBox";
 import testimonials from "./feed";
 
 const Testimonials = memo(() => (
-  <section className={"testimonials"}>
+  <section className={"testimonials"} role="complementary">
     <h2 className="testimonials__header">Testimonials</h2>
     <div className="testimonials__container">
       {testimonials.map(({ classValue, feedbackMessage, client }) => (

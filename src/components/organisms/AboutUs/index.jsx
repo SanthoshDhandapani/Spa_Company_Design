@@ -3,7 +3,7 @@ import AboutUsImg from "../../../assets/images/about-us.jpg";
 import "./AboutUs.scss";
 
 const AboutUs = memo(() => (
-  <section className="about-us">
+  <section className="about-us" role="contentinfo">
     <div>
       <h2 className="about-us__title">
         Mauris id bibendum est. Proin dapibus sollicitudin iaculis, Maecenas
