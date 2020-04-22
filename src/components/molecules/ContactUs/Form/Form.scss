@@ -1,0 +1,36 @@
+.contact-us__form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "name emailID mobile"
+    "messageInBrief messageInBrief messageInBrief"
+    ". submit .";
+  grid-gap: 30px;
+  margin: auto;
+  width: 70%;
+  &__name {
+    grid-area: name;
+  }
+  &__emailID {
+    grid-area: emailID;
+  }
+  &__mobile {
+    grid-area: mobile;
+  }
+  &__messageInBrief {
+    grid-area: messageInBrief;
+  }
+  &__submit {
+    grid-area: submit;
+    padding: 12px 34px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us__form {
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "name" "emailID" "mobile" "messageInBrief" "submit";
+  }
+}
